@@ -3,7 +3,7 @@ from lib2to3.pgen2 import driver
 from selenium import webdriver # Driver del navegador
 from selenium.webdriver.common.by import By # Elementos html
 from selenium.webdriver.common.keys import Keys # Inputs del teclado
-import sys, os
+import sys, os, time
 
 
 options = webdriver.ChromeOptions()
@@ -63,6 +63,7 @@ except:
     sys.exit(1)
 finally:
     driver.implicitly_wait(5)
+    time.sleep(5)
 
 '''
 --------------------------------------------------------------
@@ -78,6 +79,7 @@ except:
     sys.exit(1)
 finally:
     driver.implicitly_wait(5)
+    time.sleep(5)
 
 '''
 --------------------------------------------------------------
@@ -94,6 +96,7 @@ except:
     sys.exit(1)
 finally:
     driver.implicitly_wait(5)
+    time.sleep(5)
 
 '''
 --------------------------------------------------------------
